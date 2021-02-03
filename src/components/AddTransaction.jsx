@@ -12,9 +12,8 @@ const AddTransaction = () => {
     addTransaction({
       id: new Date().getTime(),
       description: description,
-      transactionAmount: transactionAmount,
+      transactionAmount: parseFloat(transactionAmount),
     });
-    console.log(transactions);
     setDescription("");
     setTransactionAmount("");
   };
