@@ -1,4 +1,4 @@
-export default AppReducer = (state, action) => {
+const AppReducer = (state, action) => {
   switch (action.type) {
     case "ADD_TRANSACTION":
       return {
@@ -16,3 +16,5 @@ export default AppReducer = (state, action) => {
       throw new Error("Undefined");
   }
 };
+
+export default AppReducer;
